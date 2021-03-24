@@ -2,8 +2,8 @@
 	width: 400px;
 	height: 400px;
 	margin: 0 auto;
-	background-color: gray;
-	margin-top: 20px;
+	background-color: black;
+	margin-top: 50px;
 	position: relative;
 }
 
@@ -12,4 +12,24 @@
 	width: 25px;
 	height: 25px;
 	background-color: red;
+}
+
+.body {
+	margin: 0;
+	background-image: url(./main.gif);
+	background-size: 100%;
+}
+
+.info {
+	margin: 0;
+	color: white;
+	background-color: black;
+	min-width: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.info > p, .info > h2 {
+	display: inline-block;
 }
