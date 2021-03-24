@@ -1,0 +1,15 @@
+.game_place {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: gray;
+	margin-top: 20px;
+	position: relative;
+}
+
+.block {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+}
