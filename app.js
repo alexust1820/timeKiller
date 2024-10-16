@@ -22,6 +22,6 @@ function changeLoc() {
 
 function restart() {
 	// document.location.reload();
-	score = -10 
+	score = 0 
 	changeLoc()
 }
