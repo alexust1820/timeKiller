@@ -1,5 +1,7 @@
-let score = 0
+// Mainest game`s vars
+let GameScore = 0
 
+// init the coolest timeKiller in the world!
 makeBlock();
 
 function makeBlock() {
@@ -7,21 +9,23 @@ function makeBlock() {
 	document.getElementById('js-block').style.left = ((Math.random()) * 370) + 'px'
 	document.getElementById('js-block').style.top = ((Math.random()) * 370) + 'px'
 	document.getElementById('js-block').onclick = function p() {
-		changeLoc();
+		changeLoc()
+		updateScore()
 	}
 }
 
 function changeLoc() {
-	score += 10
 	document.getElementById('js-block').style.left = ((Math.random()) * 370) + 'px'
 	document.getElementById('js-block').style.top = ((Math.random()) * 370) + 'px'
 	console.log(document.getElementById('js-block').style.left, document.getElementById('js-block').style.top)
+}
+
+function updateScore() {
+	score += 10
 	document.getElementById('score').innerHTML = `Your score: ${score}`
-	console.log(score)
 }
 
 function restart() {
-	// document.location.reload();
 	score = 0 
 	changeLoc()
 }
