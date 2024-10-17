@@ -21,11 +21,11 @@ function changeLoc() {
 }
 
 function updateScore() {
-	score += 10
-	document.getElementById('score').innerHTML = `Your score: ${score}`
+	GameScore += 10
+	document.getElementById('score').innerHTML = `Your score: ${GameScore}`
 }
 
 function restart() {
-	score = 0 
+	GameScore = 0 
 	changeLoc()
 }
