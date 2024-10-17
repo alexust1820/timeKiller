@@ -10,7 +10,7 @@ function makeBlock() {
 	document.getElementById('js-block').style.top = ((Math.random()) * 370) + 'px'
 	document.getElementById('js-block').onclick = function p() {
 		changeLoc()
-		updateScore()
+		GameScore += 1
 	}
 }
 
@@ -18,14 +18,10 @@ function changeLoc() {
 	document.getElementById('js-block').style.left = ((Math.random()) * 370) + 'px'
 	document.getElementById('js-block').style.top = ((Math.random()) * 370) + 'px'
 	console.log(document.getElementById('js-block').style.left, document.getElementById('js-block').style.top)
-}
-
-function updateScore() {
 	document.getElementById('score').innerHTML = `Your score: ${GameScore}`
-	GameScore += 10
 }
 
 function restart() {
-	GameScore = 0 
+	GameScore = -1
 	changeLoc()
 }
